@@ -1,0 +1,154 @@
+:root{
+
+    font-family: 'Roboto';
+}
+
+body{
+
+    margin: 0px;
+}
+
+.main{
+
+    display: flex;
+    background-color: beige;
+}
+
+.left{
+
+    height: 100vh;
+    width: 30vw;
+    background-size: cover;
+    background-image: url("photos/halie-west-25xggax4bSA-unsplash\ \(1\).jpg");
+}
+
+.logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(243, 247, 247, 0.479);
+    position:relative;
+    top: 284px;
+
+
+}
+.right{
+
+    height: 100vh;
+    width: 70vw;
+    background-color:lightgray;
+}
+
+.heading{
+
+    
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 80px;
+    
+}
+.heading1{
+
+    width: 800px;
+}
+
+.form{
+
+    background-color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px 2px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.formHeading{
+
+    position: absolute;
+    top: 10px;
+    left: 80px;
+
+}
+
+.rowOne, .rowTwo, .rowThree {
+
+    /* display: flex;
+    justify-content:flex-start; */
+    /* gap: 50px; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+
+
+}
+
+input{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* #emailInput, #phoneInput{
+
+    display:inline-block
+} */
+
+
+
+input:focus {
+
+    border: 3px solid #0011ffad;
+
+}
+
+input:invalid  {
+ 
+    border: 3px solid #ff0000be;
+}
+
+
+.confirmation{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+.createAccount, .alreadyHaveAccountText{
+
+    margin-top: 30px;
+}
+button {
+    --c:  #229091; /* the color*/
+    height: 40px;
+    width: 200px;
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
